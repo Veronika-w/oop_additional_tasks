@@ -11,21 +11,22 @@
 
 `.substract(<значение>)` вычитает указанное число из value
 """
+from tomlkit import value
+
 
 class Number:
 
     def __init__(self, value):
-        ...
+        self.value = value
 
-    def ...(self):
-        ...
+    def get(self):
+        return self.value
 
-    def ...:
-        ...
+    def add(self,value):
+        self.value += value
 
-    def ...:
-        ...
-
+    def substract(self, value):
+        self.value -= value
 
 # код для проверки 
 n = Number(7)
